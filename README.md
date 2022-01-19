@@ -11,15 +11,15 @@
 
 1. in SignUpModal.js you have a form, complete the form
      * it should have two inputs : username and password
-     * dont forget handle change 
-     * dont forget handle submit
+     * add handle change 
+     * complete handle submit
 2. create a folder called stores
 2. inside stores folder create an instance file to add your base Url    
 3. inside stores folder create authStore
-4. `import { observable, makeAutoObservable, action } from 'mobx';`
+4. `import { makeAutoObservable } from 'mobx';`
 5. import the istance/api 
 6. create user = null
-7. create constructor
+7. create a constructor
 8. create sign up method 
 9. call it in sign up modal 
 
@@ -29,8 +29,8 @@
 1. create a component called SignInModal.js it should have a form
       * it should have two inputs : username and password
       * dont forget handle change 
-      * dont forget handle submit
-2. create sign ip method 
+      * complete handle submit
+2. create sign in method 
 3. create a set user method
 4. call the sign in method in the modal
 
