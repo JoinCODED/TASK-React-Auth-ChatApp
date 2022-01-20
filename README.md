@@ -39,6 +39,7 @@
 2. add a Logout button in the navbar 
 3. add a Logout methon in the authStore
 4. call the logout method when the user clicks the logout button
+5. make sure that if you refresh the user stayes logeed in 
 
 
 ```js
