@@ -6,7 +6,7 @@ import ChatRoomsList from "./components/ChatRoomsList";
 import { Route, Switch } from "react-router";
 import NavBar from "./components/NavBar";
 
-function App() {
+const App = () => {
   return (
     <div>
       <NavBar />
@@ -26,6 +26,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

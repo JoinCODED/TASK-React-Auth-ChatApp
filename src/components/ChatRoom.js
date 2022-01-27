@@ -4,7 +4,7 @@ import MessageItem from "./MessageItem";
 import roomStore from "../roomStore";
 import { observer } from "mobx-react";
 
-function ChatRoom() {
+const ChatRoom = () => {
   const roomSlug = useParams().roomSlug;
   const [msg, setMsg] = useState({ msg: "" });
   if (roomStore.rooms.length === 0) {
@@ -58,5 +58,5 @@ function ChatRoom() {
       </div>
     </div>
   );
-}
+};
 export default observer(ChatRoom);

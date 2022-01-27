@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import UpdateRoomModal from "./UpdateRoomModal";
 import roomStore from "../roomStore";
 
-function ChatRoomitem({room}) {
-
+const ChatRoomitem = ({ room }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -40,5 +39,5 @@ function ChatRoomitem({room}) {
       <UpdateRoomModal isOpen={isOpen} closeModal={closeModal} room={room} />
     </div>
   );
-}
+};
 export default ChatRoomitem;

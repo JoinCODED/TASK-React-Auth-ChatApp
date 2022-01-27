@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-export default function MessageItem({msg}) {
+const MessageItem = ({ msg }) => {
   const time = useMemo((date) => (date = Date()), []);
   return (
     // IMPORTANT NOTE FOR LINE 8
@@ -23,4 +23,6 @@ export default function MessageItem({msg}) {
       </div>
     </div>
   );
-}
+};
+
+export default MessageItem;

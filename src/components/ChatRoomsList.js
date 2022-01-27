@@ -4,7 +4,7 @@ import CreateRoomModal from "./CreateRoomModal";
 import roomStore from "../roomStore";
 import { observer } from "mobx-react";
 
-function ChatRoomsList({}) {
+const ChatRoomsList = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -31,5 +31,5 @@ function ChatRoomsList({}) {
       <div className="chatlist__items">{roomsList}</div>
     </div>
   );
-}
+};
 export default observer(ChatRoomsList);

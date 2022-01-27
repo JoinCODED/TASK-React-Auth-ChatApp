@@ -1,7 +1,7 @@
 import { Modal, Button, Form } from "react-bootstrap";
 import React, { useState } from "react";
 
-function SignUpModal() {
+const SignUpModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleSubmit = (event) => {
@@ -12,7 +12,7 @@ function SignUpModal() {
   };
 
   return (
-    <>
+    <div>
       <Button className="delete" onClick={() => setIsOpen(true)}>
         Sign Up
       </Button>
@@ -33,7 +33,7 @@ function SignUpModal() {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
-}
+};
 export default SignUpModal;

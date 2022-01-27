@@ -2,7 +2,7 @@ import { Modal, Button, InputGroup, Form } from "react-bootstrap";
 import React, { useState } from "react";
 import roomStore from "../roomStore";
 
-export default function CreateRoomModal({ isOpen, closeModal }) {
+const CreateRoomModal = ({ isOpen, closeModal }) => {
   const [room, setRoom] = useState({
     title: "",
     image: "",
@@ -53,4 +53,5 @@ export default function CreateRoomModal({ isOpen, closeModal }) {
       </Modal.Footer>
     </Modal>
   );
-}
+};
+export default CreateRoomModal;
