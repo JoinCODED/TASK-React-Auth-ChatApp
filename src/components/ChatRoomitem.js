@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import UpdateRoomModal from "./UpdateRoomModal";
 import roomStore from "../roomStore";
 
-function ChatRoomitem(props) {
-  const room = props.room;
+function ChatRoomitem({room}) {
 
   const [isOpen, setIsOpen] = useState(false);
 
